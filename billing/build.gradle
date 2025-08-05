@@ -34,5 +34,5 @@ dependencies {
     implementation "com.android.billingclient:billing-ktx:7.1.1"
 
     // LiveData
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.9.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.9.2"
 }

@@ -20,4 +20,4 @@
 # hide the original source file name.
 -renamesourcefileattribute SourceFile
 
--keep class com.hypersoft.billing.dataClasses.**
+-keep class com.hypersoft.billing.data.entities.**
