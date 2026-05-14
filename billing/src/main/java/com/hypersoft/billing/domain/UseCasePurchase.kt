@@ -184,7 +184,8 @@ internal class UseCasePurchase(private val repository: BillingRepository) {
             repository.currentState = BillingState.PURCHASES_NOT_FOUND
             return@withContext
         }
-        checkForAcknowledgedPurchases(purchases)
+        val onlyAcknowledgeList = purchases.filter { purchase -> !purchase.products.any(consumableIds::contains) }
+        checkForAcknowledgedPurchases(onlyAcknowledgeList)
         checkForConsumablePurchases(purchases, consumableIds)
     }
 
